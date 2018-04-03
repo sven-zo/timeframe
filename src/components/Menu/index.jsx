@@ -6,20 +6,22 @@ import settings from './settings.svg';
 import './style.css';
 
 
-const Menu = props => (
-  <div className="menu">
-    <img src={chevron} alt="Go back" className={props.skeleton} id="chevron" />
-    <img src={logo} alt="Logo" id="logo" />
-    <img src={settings} alt="Settings" className={props.skeleton} id="settings" />
-  </div>
-);
+const Menu = (props) => {
+  return (
+    <div className="menu">
+      <img src={chevron} alt="Go back" className={props.skeleton ? 'icon-skeleton' : ''} id="chevron" />
+      <img src={logo} alt="Logo" id="logo" className={props.skeleton ? 'logo-skeleton' : ''} />
+      <img src={settings} alt="Settings" className={props.skeleton ? 'icon-skeleton' : ''} id="settings" />
+    </div>
+  );
+};
 
 Menu.propTypes = {
-  skeleton: PropTypes.oneOf(['', 'skeleton']),
+  skeleton: PropTypes.bool,
 };
 
 Menu.defaultProps = {
-  skeleton: 'skeleton',
+  skeleton: true,
 };
 
 
