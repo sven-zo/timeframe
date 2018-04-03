@@ -64,3 +64,8 @@
     opacity: 1;
   }
 }
+
+.menu .skeleton {
+    opacity: 0;
+    cursor: default;
+}
