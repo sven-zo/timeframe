@@ -1,8 +1,13 @@
 import React from 'react';
 import './style.css';
+import Menu from '../Menu';
+import Time from '../Time';
 
 const Home = () => (
-  <h1>Horsefighter</h1>
+  <div className="home">
+    <Menu />
+    <Time />
+  </div>
 );
 
 export default Home;

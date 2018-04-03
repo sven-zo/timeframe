@@ -1,0 +1,11 @@
+.time h1 {
+    color: #4D148C;
+    margin-left: 2%;
+    line-height: 50%;
+}
+
+.time h2 {
+    color: #58575A;
+    margin-left: 2%;
+    font-size: 1.6em;
+}
