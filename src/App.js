@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import configureStore from './state/store';
 import './App.css';
+import DevTools from './containers/DevTools';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App timeframe">
+const store = configureStore();
 
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Provider store={store}>
+    <div>
+      <DevTools />
+    </div>
+  </Provider>
+);
 
 export default App;
