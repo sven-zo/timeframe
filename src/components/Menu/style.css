@@ -1,21 +1,66 @@
 .menu {
-    height: 10vh;
-    background-color: #F3F3F5;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  height: 10vh;
+  background-color: #f3f3f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu img {
-    height: 50%;
-    cursor: pointer;
+  height: 50%;
+  cursor: pointer;
 }
 
 .menu #chevron {
-    margin-left: 2%;
+  margin-left: 2%;
+  animation-name: chevronAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.menu #chevron:hover {
+  animation-name: chevronAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 
 .menu #settings {
-    margin-right: 2%;
+  margin-right: 2%;
+  animation-name: settingsAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.menu #settings:hover {
+  animation-name: settingsAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes settingsAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes chevronAnimation {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
