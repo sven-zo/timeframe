@@ -5,8 +5,8 @@ import Time from '../Time';
 
 const Home = () => (
   <div className="home">
-    <Menu skeleton />
-    <Time />
+    <Menu skeleton={false} />
+    <Time skeleton={false} />
   </div>
 );
 
