@@ -4,8 +4,8 @@ import createHistory from 'history/createBrowserHistory';
 import { Provider } from 'react-redux';
 import configureStore from './state/store';
 import './App.css';
-import Home from './components/Home';
 import DevTools from './containers/DevTools';
+import HomeContainer from './containers/HomeContainer';
 
 const store = configureStore();
 const history = createHistory();
@@ -15,11 +15,13 @@ const App = () => (
     <div>
       <DevTools />
       <Router history={history}>
-        <Route path="/" component={Home} />
+        <Route path="/" component={HomeContainer} />
       </Router>
     </div>
   </Provider>
 );
+
+
 
 
 export default App;
