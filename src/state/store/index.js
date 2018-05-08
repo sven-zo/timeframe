@@ -2,6 +2,7 @@ import createSagaMiddleware from 'redux-saga';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import rootReducer from '../reducers';
 import DevTools from '../../containers/DevTools';
+import rootSaga from '../sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -19,5 +20,7 @@ export default function configureStore(initialState) {
   if (module.hot) {
     module.hot.accept('../reducers', () => store.replaceReducer(require('../reducers')));
   }
+
+  sagaMiddleware.run(rootSaga);
   return store;
 }

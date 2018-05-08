@@ -8,7 +8,7 @@ const Time = (props) => {
       <div className="time">
         <div className="loader">Loading...</div>
       </div>
-    )
+    );
   }
   return (
     <div className="time">
