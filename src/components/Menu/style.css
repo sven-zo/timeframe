@@ -25,28 +25,25 @@
   animation-iteration-count: 1;
 }
 
-.menu #settings {
+.menu #help {
   margin-right: 2%;
   animation-name: settingsAnimation;
   animation-duration: 1s;
   animation-iteration-count: 1;
 }
 
-.menu #settings:hover {
+.menu #help:hover {
   animation-name: settingsAnimation;
   animation-duration: 1s;
   animation-iteration-count: 1;
 }
-
+/*nieuwe animatie dingen*/
 @keyframes settingsAnimation {
   0% {
     transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(-50deg);
-  }
   100% {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 }
 
