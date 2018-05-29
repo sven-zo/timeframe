@@ -1,0 +1,28 @@
+.arrive {
+  padding-top: 25px;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  align-content: center;
+}
+
+.arrive__left {
+  padding: 10px;
+  padding-left: 10%;
+}
+
+.arrive__left img {
+  height: 150px;
+}
+
+.arrive__right {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: transparent;
+  padding-top: 5px;
+}
+
+.arrive__right p {
+  color: #4F4F4F;
+}

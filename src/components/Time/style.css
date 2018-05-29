@@ -1,3 +1,8 @@
+.time {
+  animation-duration: 1s;
+  animation-name: fadeAndScale;
+}
+
 .time h1 {
     color: #4D148C;
     margin-left: 2%;
