@@ -11,7 +11,6 @@ const Menu = (props) => {
     <div className="menu">
       <img src={chevron} alt="Go back" className={props.skeleton ? 'icon-skeleton' : ''} id="chevron" />
       <img src={logo} alt="Logo" id="logo" className={props.skeleton ? 'logo-skeleton' : ''} />
-      /*eng logo neef*/
       <img src={help} alt="Help" className={props.skeleton ? 'icon-skeleton' : ''} id="help" />
     </div>
   );
