@@ -4,6 +4,8 @@
   background-color: transparent;
   display: flex;
   align-content: center;
+  animation-duration: 1.5s;
+  animation-name: fadeAndScale;
 }
 
 .arrive__left {
@@ -12,7 +14,7 @@
 }
 
 .arrive__left img {
-  height: 150px;
+  height: 100px;
 }
 
 .arrive__right {
@@ -20,9 +22,8 @@
   margin-right: auto;
   text-align: center;
   background-color: transparent;
-  padding-top: 15px;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 .arrive__right p {

@@ -3,11 +3,12 @@ import './style.css';
 import Menu from '../Menu';
 import Time from '../Time';
 import Arrive from '../Arrive';
+import CardCarousel from '../CardCarousel';
 
 const Home = () => (
   <div className="home">
     <Menu skeleton={false} />
-    <Time skeleton={false} />
+    <CardCarousel skeleton={false} />
     <Arrive signature />
   </div>
 );

@@ -1,0 +1,6 @@
+.card-carousel {
+  display: inline-block;
+  overflow: auto;
+  white-space: nowrap;
+  width:100%;
+}

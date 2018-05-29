@@ -1,0 +1,12 @@
+.card {
+  display: inline-block;
+  margin: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.43) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(124deg, #4D148C 0%, #FF6600 99.2%);
+  width: 80vw;
+}
