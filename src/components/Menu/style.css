@@ -13,13 +13,16 @@
 }
 
 .menu #icons {
-  height: 50%;
+  height: 100%;
   cursor: pointer;
+  margin-top: 5%;
+  margin-left: 2%;
 }
 
 .menu .empty {
   height: 50%;
   width: 37px;
+  margin-left: 2%;
 }
 
 .menu #chevron {
