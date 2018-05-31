@@ -1,3 +1,5 @@
+/* eslint react/jsx-filename-extension: 0 */
+
 import React from 'react';
 import { Router, Route } from 'react-router';
 import createHistory from 'history/createBrowserHistory';
@@ -20,8 +22,5 @@ const App = () => (
     </div>
   </Provider>
 );
-
-
-
 
 export default App;
