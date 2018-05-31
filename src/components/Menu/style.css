@@ -12,6 +12,11 @@
   cursor: pointer;
 }
 
+.menu #icons {
+  height: 50%;
+  cursor: pointer;
+}
+
 .menu .empty {
   height: 50%;
   width: 37px;
