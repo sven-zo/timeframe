@@ -8,7 +8,7 @@ import PackageInformation from '../PackageInformation';
 
 const Home = () => (
   <div className="home">
-    <Menu skeleton={false} />
+    <Menu skeleton={false} showBackButton />
     <CardCarousel skeleton={false} />
     <Arrive signature />
     <TrackingCode />
