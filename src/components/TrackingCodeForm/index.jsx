@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 import Menu from '../Menu';
 import packageIcon from './package-icon-anim.svg';
@@ -10,9 +11,13 @@ const TrackingCodeForm = () => (
     <img id="packageIcon" src={packageIcon} alt="" />
     <div className="milkyGlassBox">
       <h2>Please fill in your tracking code to continue.</h2>
-      <input type="text" />
+      <input type="text" placeholder="DT000000000000" maxLength="14" />
       <p>Tracking code</p>
-      <img src={nextButton} alt="next" />
+      <div className="nextButton">
+        <Link href="/" to="/">
+          <img src={nextButton} alt="next" />
+        </Link>
+      </div>
     </div>
   </div>
 );
