@@ -1,0 +1,41 @@
+.tracking-code-form #packageIcon { 
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  transform: scale(0.7);
+}
+
+.milkyGlassBox {
+  background: linear-gradient(180deg, rgba(195, 195, 195, 0.36) 0%, rgba(196, 196, 196, 0) 100%);
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.milkyGlassBox h2 {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  font-size: 18px;
+}
+
+.milkyGlassBox input {
+  font-size: 24px;
+  text-align: center;
+  border-width: 0px;
+  background-color: #ededed;
+  border-radius: 2000px;
+  padding: 10px;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.milkyGlassBox p {
+  margin-top: 10px;
+  text-align: center;
+}
