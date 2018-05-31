@@ -12,7 +12,7 @@ const history = createHistory();
 
 const App = () => (
   <Provider store={store}>
-    <div>
+    <div className="app">
       <DevTools />
       <Router history={history}>
         <Route path="/" component={HomeContainer} />
