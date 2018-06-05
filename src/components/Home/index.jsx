@@ -15,7 +15,7 @@ const Home = ({ skeleton }) =>
     </div>
   ) : (
     <div className="home">
-      <Menu skeleton={false} showBackButton />
+      <Menu skeleton={false} showBackButton backUrl="/input" showHelpButton />
       <CardCarousel skeleton={false} />
       <Arrive signature />
       <TrackingCode />
