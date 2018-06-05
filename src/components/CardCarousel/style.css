@@ -7,3 +7,29 @@
   scroll-snap-destination: 50% 50%;
   scroll-behavior: smooth;
 }
+
+.card-carousel--center {
+  display: flex;
+}
+
+.card-loader {
+  display: inline-block;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background: linear-gradient(124deg, #4D148C 0%, #FF6600 99.2%);
+  background-size: 140%;
+  width: 80%;
+  height: 162.781px;
+  animation: backgroundAnimation 3s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 0% }
+  50% { background-position: 100% 100% }
+  100% { background-position: 0% 0% }
+}

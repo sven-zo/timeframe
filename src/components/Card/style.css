@@ -10,4 +10,17 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.43) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(124deg, #4D148C 0%, #FF6600 99.2%);
   width: 80%;
   scroll-snap-coordinate: 50% 50%;
+  animation-name: flyIn;
+  animation-duration: 0.3s;
+}
+
+@keyframes flyIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

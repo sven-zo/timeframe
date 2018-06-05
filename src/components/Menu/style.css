@@ -72,24 +72,7 @@
   }
 }
 
-@keyframes logoAnimation {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.5;
-  }
-}
-
 .menu .icon-skeleton {
     opacity: 0;
     cursor: default;
-}
-
-.menu .logo-skeleton {
-  animation-name: logoAnimation;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }
