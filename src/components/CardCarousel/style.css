@@ -4,6 +4,6 @@
   white-space: nowrap;
   width:100%;
   scroll-snap-type: mandatory;
-  scroll-snap-points-x: repeat(calc(75% + 6px));
+  scroll-snap-destination: 50% 50%;
   scroll-behavior: smooth;
 }
