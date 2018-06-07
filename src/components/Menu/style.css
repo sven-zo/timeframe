@@ -15,14 +15,16 @@
 .menu #icons {
   height: 100%;
   cursor: pointer;
-  margin-top: 5%;
+  margin-top: 6.5%;
   margin-left: 2%;
+  margin-right: 2%;
 }
 
 .menu .empty {
   height: 50%;
   width: 37px;
   margin-left: 2%;
+  margin-right: 3.5%;
 }
 
 .menu #chevron {

@@ -9,6 +9,7 @@ import './App.css';
 import DevTools from './containers/DevTools';
 import HomeContainer from './containers/HomeContainer';
 import TrackingCodeForm from './components/TrackingCodeForm';
+import Help from './components/Help';
 
 const store = configureStore();
 const history = createHistory();
@@ -20,6 +21,7 @@ const App = () => (
       <Router history={history}>
         <Switch>
           <Route path="/input" component={TrackingCodeForm} />
+          <Route path="/help" component={Help} />
           <Route path="/" component={HomeContainer} />
         </Switch>
       </Router>
