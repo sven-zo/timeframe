@@ -1,12 +1,23 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import './style.css';
 
-const Card = () => (
+const Card = ({ status, timeframe, date }) => (
   <div className="card">
-    <h1>At hub</h1>
-    <h2>15:10 - 16:00</h2>
-    <p>21 mei</p>
+    <h1>{status}</h1>
+    <h2>{timeframe}</h2>
+    <p>{date}</p>
   </div>
 );
+Card.propTypes = {
+  status: PropTypes.string,
+  timeframe: PropTypes.string,
+  date: PropTypes.string,
+};
+Card.defaultProps = {
+  status: 'Not found',
+  timeframe: 'Unknown',
+  date: 'Unknown',
+};
 
 export default Card;
