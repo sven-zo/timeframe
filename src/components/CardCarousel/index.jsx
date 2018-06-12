@@ -21,9 +21,9 @@ class CardCarousel extends React.Component {
       </div>
     ) : (
       <div ref={this.elem} className="card-carousel">
-        <Card status="At hub" timeframe="15:10 - 16:00" date="May 21" />
-        <Card status="Delivery is on its way" timeframe="15:20 - 15:50" date="May 21" />
-        <Card status="Delivery is on its way" timeframe="15:40 - 15:50" date="May 21" />
+        <Card status="At the hub" timeframe="15:10 - 16:00" date="May 21" />
+        <Card status="On it's way" timeframe="15:20 - 15:50" date="May 21" />
+        <Card status="On it's way" timeframe="15:40 - 15:50" date="May 21" />
       </div>
     );
   }
