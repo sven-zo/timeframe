@@ -1,27 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './style.css';
 
-const FAQ = () => (
+const FAQ = ({ question, answer }) => (
   <div className="faq">
     <div className="faq-card-border">
-      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
+      <h3>{question}</h3>
       <div className="faq-card">
-        <h4>Ut enim ad minim veniam, quis nostrud laboris nisi ut aliquip commodo consequat.</h4>
-      </div>
-    </div>
-    <div className="faq-card-border">
-      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
-      <div className="faq-card">
-        <h4>Ut enim ad minim veniam, quis nostrud laboris nisi ut aliquip commodo consequat.</h4>
-      </div>
-    </div>
-    <div className="faq-card-border">
-      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
-      <div className="faq-card">
-        <h4>Ut enim ad minim veniam, quis nostrud laboris nisi ut aliquip commodo consequat.</h4>
+        <h4>{answer}</h4>
       </div>
     </div>
   </div>
 );
+
+FAQ.propTypes = {
+  question: PropTypes.string,
+  answer: PropTypes.string,
+};
+
+FAQ.defaultProps = {
+  question: 'No question found',
+  answer: 'No answer found',
+};
 
 export default FAQ;
