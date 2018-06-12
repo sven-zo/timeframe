@@ -8,7 +8,8 @@ import nextButton from './next-button.svg';
 
 const TrackingCodeForm = ({ store, history }) => {
   const clickHandler = () => {
-    store.dispatch(requestPackage(2));
+    const packageID = window.prompt('PACKAGE ID?');
+    store.dispatch(requestPackage(packageID));
     history.push('/');
   };
 

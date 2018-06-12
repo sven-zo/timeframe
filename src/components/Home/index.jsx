@@ -25,7 +25,7 @@ const Home = ({ state }) => {
       <CardCarousel skeleton={false} parcel={state.rootReducer.parcel} />
       <Arrive signature />
       <TrackingCode />
-      <PackageInformation />
+      <PackageInformation parcel={state.rootReducer.parcel} />
     </div>
   );
 };
