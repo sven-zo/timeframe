@@ -6,22 +6,29 @@ import Arrive from '../Arrive';
 import CardCarousel from '../CardCarousel';
 import TrackingCode from '../TrackingCode';
 import PackageInformation from '../PackageInformation';
+import { Link } from 'react-router-dom';
 
-const Home = ({ skeleton }) =>
-  (skeleton ? (
+const Home = ({ state }) => {
+  // const { skeleton } = state.rootReducer.parcel;
+  // const skeleton = state.rootReducer.parcel.skeleton;
+  let { skeleton } = state.rootReducer.parcel;
+  if (!skeleton) skeleton = false;
+  return skeleton ? (
     <div className="home">
       <Menu skeleton />
       <CardCarousel skeleton />
+      <Link to="/input">INPUT</Link>
     </div>
   ) : (
     <div className="home">
       <Menu skeleton={false} showBackButton backUrl="/input" showHelpButton />
-      <CardCarousel skeleton={false} />
+      <CardCarousel skeleton={false} parcel={state.rootReducer.parcel} />
       <Arrive signature />
       <TrackingCode />
       <PackageInformation />
     </div>
-  ));
+  );
+};
 
 Home.propTypes = {
   skeleton: PropTypes.bool,

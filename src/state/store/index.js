@@ -6,7 +6,6 @@ import rootSaga from '../sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 
-
 const enhancer = compose(
   applyMiddleware(sagaMiddleware),
   DevTools.instrument(),
@@ -14,7 +13,7 @@ const enhancer = compose(
 
 export default function configureStore(initialState) {
   const reducers = combineReducers({
-    ...rootReducer,
+    rootReducer,
   });
   const store = createStore(reducers, initialState, enhancer);
   if (module.hot) {
