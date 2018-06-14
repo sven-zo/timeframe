@@ -7,14 +7,16 @@ const TrackingCode = ({ parcel }) => {
   let depth;
   let firstName;
   let lastName;
-  if (parcel.package.packageData.dimensions) {
-    height = parcel.package.packageData.dimensions.height;
-    width = parcel.package.packageData.dimensions.width;
-    depth = parcel.package.packageData.dimensions.depth;
-  }
-  if (parcel.package.packageData.customer) {
-    firstName = parcel.package.packageData.customer.name.first;
-    lastName = parcel.package.packageData.customer.name.last;
+  if (parcel.package) {
+    if (parcel.package.packageData.dimensions) {
+      height = parcel.package.packageData.dimensions.height;
+      width = parcel.package.packageData.dimensions.width;
+      depth = parcel.package.packageData.dimensions.depth;
+    }
+    if (parcel.package.packageData.customer) {
+      firstName = parcel.package.packageData.customer.name.first;
+      lastName = parcel.package.packageData.customer.name.last;
+    }
   }
   return (
     <div className="package-information">
