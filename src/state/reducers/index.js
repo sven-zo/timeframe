@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { PACKAGE_FETCH_SUCCESS } from '../actions';
+import { PACKAGE_FETCH_SUCCESS, FORM_CHANGE } from '../actions';
 
 function info(state = 'timeframe', action) {
   switch (action.type) {
@@ -17,9 +17,19 @@ function parcel(state = { skeleton: true, package: {} }, action) {
   }
 }
 
+function form(state = '', action) {
+  switch (action.type) {
+    case FORM_CHANGE:
+      return action.payload;
+    default:
+      return state;
+  }
+}
+
 const rootReducer = combineReducers({
   info,
   parcel,
+  form,
 });
 
 export default rootReducer;

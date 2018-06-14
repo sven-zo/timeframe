@@ -9,15 +9,15 @@ import PackageInformation from '../PackageInformation';
 import { Link } from 'react-router-dom';
 
 const Home = ({ state }) => {
-  // const { skeleton } = state.rootReducer.parcel;
-  // const skeleton = state.rootReducer.parcel.skeleton;
   let { skeleton } = state.rootReducer.parcel;
   if (!skeleton) skeleton = false;
   return skeleton ? (
     <div className="home">
       <Menu skeleton />
       <CardCarousel skeleton />
-      <Link to="/input">INPUT</Link>
+      <Link to="/input" href="/input">
+        Keeps loading forever? Click here.
+      </Link>
     </div>
   ) : (
     <div className="home">

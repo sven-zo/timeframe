@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { requestPackage } from '../../state/actions';
 import './style.css';
 import Menu from '../Menu';
 import packageIcon from './package-icon-anim.svg';
 import nextButton from './next-button.svg';
+import { formChange } from '../../state/actions';
 
 const TrackingCodeForm = ({ store, history }) => {
   const clickHandler = () => {
-    const packageID = window.prompt('PACKAGE ID?');
-    store.dispatch(requestPackage(packageID));
+    const p = store.getState().rootReducer.form;
+    store.dispatch(requestPackage(p));
     history.push('/information');
   };
 
@@ -20,13 +20,23 @@ const TrackingCodeForm = ({ store, history }) => {
     }
   };
 
+  const handleChange = (event) => {
+    store.dispatch(formChange(event.target.value));
+  };
+
   return (
     <div className="tracking-code-form">
       <Menu skeleton={false} />
       <img id="packageIcon" src={packageIcon} alt="" />
       <div className="milkyGlassBox">
         <h2>Please fill in your tracking code to continue.</h2>
-        <input type="text" placeholder="DT000000000000" maxLength="14" />
+        <input
+          type="text"
+          placeholder="DT000000000000"
+          maxLength="14"
+          value={store.form}
+          onChange={handleChange}
+        />
         <p>Tracking code</p>
         <div className="nextButton">
           <button onClick={clickHandler} onKeyPress={keypressHandler}>
