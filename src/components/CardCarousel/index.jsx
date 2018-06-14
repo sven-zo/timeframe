@@ -96,6 +96,7 @@ class CardCarousel extends React.Component {
         <Card status="On it's way" timeframe="15:20 - 15:50" date={`${monthString} ${day}`} />
         <Card status="On it's way" timeframe="15:40 - 15:50" date={`${monthString} ${day}`} />
         <Card
+          old={false}
           status="Card"
           timeframe={`${minTimeH}:${minTimeM} - ${maxTimeH}:${maxTimeM}`}
           date={`${monthString} ${day}`}
