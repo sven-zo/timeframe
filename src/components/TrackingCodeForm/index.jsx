@@ -10,7 +10,7 @@ const TrackingCodeForm = ({ store, history }) => {
   const clickHandler = () => {
     const packageID = window.prompt('PACKAGE ID?');
     store.dispatch(requestPackage(packageID));
-    history.push('/');
+    history.push('/information');
   };
 
   const keypressHandler = (event) => {

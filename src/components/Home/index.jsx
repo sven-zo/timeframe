@@ -21,7 +21,7 @@ const Home = ({ state }) => {
     </div>
   ) : (
     <div className="home">
-      <Menu skeleton={false} showBackButton backUrl="/input" showHelpButton />
+      <Menu skeleton={false} showBackButton backUrl="/" showHelpButton />
       <CardCarousel skeleton={false} parcel={state.rootReducer.parcel} />
       <Arrive signature />
       <TrackingCode />

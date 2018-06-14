@@ -44,7 +44,6 @@ class CardCarousel extends React.Component {
       maxTimeM = dateMax.getMinutes();
       day = dateMax.getDate();
       month = dateMax.getMonth();
-      console.log(minTimeH, minTimeM, maxTimeH, maxTimeM);
       switch (month) {
         case 0:
           monthString = 'January';

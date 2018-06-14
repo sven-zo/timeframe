@@ -20,12 +20,9 @@ const App = () => (
       <DevTools />
       <Router history={history}>
         <Switch>
-          <Route
-            path="/input"
-            component={() => <TrackingCodeForm history={history} store={store} />}
-          />
+          <Route path="/information" component={() => <HomeContainer store={store} />} />
           <Route path="/help" component={Help} />
-          <Route path="/" component={() => <HomeContainer store={store} />} />
+          <Route path="/" component={() => <TrackingCodeForm history={history} store={store} />} />
         </Switch>
       </Router>
     </div>
