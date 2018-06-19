@@ -2,4 +2,5 @@ FROM node:9-alpine
 ADD . /code
 WORKDIR /code
 RUN npm install
-CMD ["npm", "build"]
+RUN npm run build
+CMD ["npm", "serve-production"]
