@@ -6,7 +6,8 @@ import Arrive from '../Arrive';
 import CardCarousel from '../CardCarousel';
 import TrackingCode from '../TrackingCode';
 import PackageInformation from '../PackageInformation';
-import { Link } from 'react-router-dom';
+import ErrorBoundary from '../ErrorBoundary';
+import RefreshButton from '../RefreshButton';
 
 const Home = ({ state }) => {
   let { skeleton } = state.rootReducer.parcel;
@@ -15,17 +16,17 @@ const Home = ({ state }) => {
     <div className="home">
       <Menu skeleton />
       <CardCarousel skeleton />
-      <Link to="/input" href="/input">
-        Keeps loading forever? Click here.
-      </Link>
+      <RefreshButton />
     </div>
   ) : (
     <div className="home">
-      <Menu skeleton={false} showBackButton backUrl="/" showHelpButton />
-      <CardCarousel skeleton={false} parcel={state.rootReducer.parcel} />
-      <Arrive signature />
-      <TrackingCode />
-      <PackageInformation parcel={state.rootReducer.parcel} />
+      <ErrorBoundary>
+        <Menu skeleton={false} showBackButton backUrl="/" showHelpButton />
+        <CardCarousel skeleton={false} parcel={state.rootReducer.parcel} />
+        <Arrive signature />
+        <TrackingCode />
+        <PackageInformation parcel={state.rootReducer.parcel} />
+      </ErrorBoundary>
     </div>
   );
 };

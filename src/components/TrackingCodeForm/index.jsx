@@ -32,7 +32,7 @@ const TrackingCodeForm = ({ store, history }) => {
         <h2>Please fill in your tracking code to continue.</h2>
         <input
           type="text"
-          placeholder="DT000000000000"
+          placeholder="000000000000"
           maxLength="14"
           value={store.form}
           onChange={handleChange}

@@ -1,0 +1,11 @@
+.refresh-button a {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-decoration: none;
+  color: #DA551D;
+}
+
+.refresh-button img {
+  height: 70px;
+}
