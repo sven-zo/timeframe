@@ -7,12 +7,12 @@ const Help = () => (
   <div className="help">
     <Menu skeleton={false} backUrl="/information" showBackButton />
     <FAQ
-      question="Wat is Timeframe?"
-      answer="Timeframe is een service die een accurate tijdsvoorspelling geeft voor het bezorgen van je pakket"
+      question="What is Timeframe?"
+      answer="Timeframe is a service that provides an accurate time frame of when your package will be delivered"
     />
     <FAQ
-      question="Hoe krijg ik mijn Timeframe?"
-      answer="Vul de tracking code in die je van FedEx hebt gekregen en wij berekenen je Timeframe"
+      question="How do I obtain my Timeframe?"
+      answer="Fill in the tracking code of your package and we will calculate your time frame"
     />
   </div>
 );
